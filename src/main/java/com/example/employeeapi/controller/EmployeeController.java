@@ -22,9 +22,8 @@ public class EmployeeController {
     String getEmployees(Model model) {
 
         model.addAttribute("message", "hello world");
-        //my work
-        List<Employee>employees=employeeRepository.getAllEmployees();
-        model.addAttribute("employees",employees);
+        List<Employee> employees = employeeRepository.getAllEmployees();
+        model.addAttribute("employees", employees);
         return "employees";
     }
 
